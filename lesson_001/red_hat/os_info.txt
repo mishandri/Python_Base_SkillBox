@@ -1,0 +1,5 @@
+OS info is 
+uname_result(system='Linux', node='mishandri-Mint', release='5.15.0-56-generic', version='#62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022', machine='x86_64', processor='x86_64')
+
+Python version is 3.7.16 (default, Dec  7 2022, 01:12:33) 
+[GCC 11.3.0] ('64bit', 'ELF')
