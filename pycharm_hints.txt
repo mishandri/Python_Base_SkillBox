@@ -1,0 +1,2 @@
+Если отображаются кракозябры в консоли, то идём в Меню - Help - Edit Custom VM Options... И добавляем строку:
+-Dfile.encoding=UTF-8
