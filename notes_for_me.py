@@ -46,7 +46,7 @@ my_set = set()  # Создание множества
 my_other_set = set([1, 2, 3, 4, 5, 5, 5, 5, 5, 6, 6, 7, 8, 9, 0])
 # ИЛИ
 my_another_set = {1, 2, 3, 4, 5, 5, 5, 5, 5, 6, 6, 7, 8, 9, 0}
-# Основные операцаии
+# Основные операции
 union = my_set | my_other_set  # Объединение
 intersection = my_set & my_other_set  # Пересечение
 difference = my_set - my_other_set  # Вычитание
