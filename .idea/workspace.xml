@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Выполнено задание 9 урока 2">
+    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Выполнено задание 10 урока 2">
       <change beforePath="$PROJECT_DIR$/lesson_002/10_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_002/10_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671368808901</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Выполнено задание 10 урока 2">
+      <created>1671369274718</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1671369274718</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Выполнено задание 10 урока 2">
+      <created>1671369333992</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1671369333992</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -312,6 +326,7 @@
     <MESSAGE value="Выполнено задание 7 урока 2" />
     <MESSAGE value="Выполнено задание 8 урока 2" />
     <MESSAGE value="Выполнено задание 9 урока 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 9 урока 2" />
+    <MESSAGE value="Выполнено задание 10 урока 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 10 урока 2" />
   </component>
 </project>
