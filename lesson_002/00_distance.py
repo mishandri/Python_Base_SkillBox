@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+from pprint import pprint  # Pretty print - красивое распечатывание
 # Есть словарь координат городов
 
 sites = {
@@ -14,10 +14,24 @@ sites = {
 
 distances = {}
 
-# TODO здесь заполнение словаря
+moscow = sites['Moscow']
+london = sites['London']
+paris = sites['Paris']
 
-print(distances)
+moscow_london = (((moscow[0] - london[0])**2) + ((moscow[1] - london[1])**2))**0.5
+moscow_paris = (((moscow[0] - paris[0])**2) + ((moscow[1] - paris[1])**2))**0.5
+paris_london = (((paris[0] - london[0])**2) + ((paris[1] - london[1])**2))**0.5
 
+distances['Moscow'] = {}
+distances['Moscow']['London'] = moscow_london
+distances['Moscow']['Paris'] = moscow_paris
 
+distances['London'] = {}
+distances['London']['Moscow'] = moscow_london
+distances['London']['Paris'] = paris_london
 
+distances['Paris'] = {}
+distances['Paris']['Moscow'] = moscow_paris
+distances['Paris']['London'] = paris_london
 
+pprint(distances)
