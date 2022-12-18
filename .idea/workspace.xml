@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Выполнено задание 2 урока 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_002/03_favorite_movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_002/03_favorite_movies.py" afterDir="false" />
+    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Выполнено задание 9 урока 2">
+      <change beforePath="$PROJECT_DIR$/lesson_002/10_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_002/10_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +214,56 @@
       <option name="project" value="LOCAL" />
       <updated>1671365322543</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Выполнено задание 3 урока 2">
+      <created>1671365584897</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671365584897</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Выполнено задание 4 урока 2">
+      <created>1671367051000</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671367051000</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Выполнено задание 5 урока 2">
+      <created>1671367358367</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671367358367</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Выполнено задание 6 урока 2">
+      <created>1671367894855</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1671367894855</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Выполнено задание 7 урока 2">
+      <created>1671368083120</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671368083120</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Выполнено задание 8 урока 2">
+      <created>1671368277338</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671368277338</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Выполнено задание 9 урока 2">
+      <created>1671368808901</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671368808901</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -257,6 +305,13 @@
     <MESSAGE value="Добавлены заметки про set" />
     <MESSAGE value="Выполнено задание 0 урока 2" />
     <MESSAGE value="Выполнено задание 2 урока 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 2 урока 2" />
+    <MESSAGE value="Выполнено задание 3 урока 2" />
+    <MESSAGE value="Выполнено задание 4 урока 2" />
+    <MESSAGE value="Выполнено задание 5 урока 2" />
+    <MESSAGE value="Выполнено задание 6 урока 2" />
+    <MESSAGE value="Выполнено задание 7 урока 2" />
+    <MESSAGE value="Выполнено задание 8 урока 2" />
+    <MESSAGE value="Выполнено задание 9 урока 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 9 урока 2" />
   </component>
 </project>
