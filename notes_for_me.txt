@@ -1,0 +1,3 @@
+Интересные функции python:
+isinstanse(x, int) #проверяет является ли x переменной типа int. True/False
+
