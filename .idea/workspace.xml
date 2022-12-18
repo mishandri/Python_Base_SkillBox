@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Оказывается, была ошибка в слове Волк" />
+    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Добавлены заметки про tuple">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes_for_me.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes_for_me.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,25 +24,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="495b163b-d240-41b8-8e76-62fe456b2d49" />
+        <option name="accountId" value="30b8d154-982a-43b5-8143-3c707f885227" />
         <option name="url" value="https://github.com/mishandri/Python_Base_SkillBox.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/notes_for_me.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2J2ikh2GnfEykPTwxTW1fn9hDN0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,7 +55,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/mishandri/PycharmProjects/Python_Base_SkillBox"
+    "last_opened_file_path": "/home/mishandri/PycharmProjects/Python_Base_SkillBox",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,7 +129,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671284884238</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавление файла notes_for_me.txt для своих заметок">
+      <created>1671343749054</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671343749054</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Переименование файла notes_for_me.py для своих заметок для python">
+      <created>1671345187001</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671345187001</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавлены заметки про string и частично про list">
+      <created>1671348209662</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671348209663</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Добавлены заметки про tuple">
+      <created>1671351842471</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671351842471</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -155,6 +191,10 @@
     <MESSAGE value="Гоблин == Волк" />
     <MESSAGE value="пружинка == верёвочка" />
     <MESSAGE value="Оказывается, была ошибка в слове Волк" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оказывается, была ошибка в слове Волк" />
+    <MESSAGE value="Добавление файла notes_for_me.txt для своих заметок" />
+    <MESSAGE value="Переименование файла notes_for_me.py для своих заметок для python" />
+    <MESSAGE value="Добавлены заметки про string и частично про list" />
+    <MESSAGE value="Добавлены заметки про tuple" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены заметки про tuple" />
   </component>
 </project>
