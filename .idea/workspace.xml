@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="workspace.xml чего-то поменял">
+    <list default="true" id="99fab5e4-efd2-4a67-919c-e2dde6421732" name="Changes" comment="Выполнено задание 2 урока 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes_for_me.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes_for_me.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_002/03_favorite_movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_002/03_favorite_movies.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -55,11 +54,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/mishandri/PycharmProjects/Python_Base_SkillBox",
+    "last_opened_file_path": "C:/Users/misha/PycharmProjects/Python_Base_SkillBox/lesson_002",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_002" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lesson_001" />
     </key>
@@ -171,7 +173,49 @@
       <option name="project" value="LOCAL" />
       <updated>1671354865972</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Добавлены заметки про set">
+      <created>1671355771873</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671355771873</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Добавлены заметки про set">
+      <created>1671355798207</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671355798207</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Добавлены заметки про set">
+      <created>1671355857006</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671355857006</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Выполнено задание 1 урока 2">
+      <created>1671362762552</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671362762552</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Выполнено задание 1 урока 2">
+      <created>1671365156646</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671365156646</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Выполнено задание 2 урока 2">
+      <created>1671365322543</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671365322543</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -210,6 +254,9 @@
     <MESSAGE value="Добавлены заметки про string и частично про list" />
     <MESSAGE value="Добавлены заметки про tuple" />
     <MESSAGE value="workspace.xml чего-то поменял" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml чего-то поменял" />
+    <MESSAGE value="Добавлены заметки про set" />
+    <MESSAGE value="Выполнено задание 0 урока 2" />
+    <MESSAGE value="Выполнено задание 2 урока 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнено задание 2 урока 2" />
   </component>
 </project>
