@@ -57,6 +57,7 @@ for element in my_list:
 def some_func():
     print("я ничего не верну")
 
+
 result = some_func()
 print(result)
 
@@ -115,9 +116,8 @@ print(zoo)
 elephant_to_free(zoo)
 print(zoo)
 
-# это т.н. функции с побочными эффектами, они меняют контекст выполнения.
-# можно заблокировать изменение параметров - передать тьюпл
+# Это т.н. функции с побочными эффектами, они меняют контекст выполнения.
+# Можно заблокировать изменение параметров - передать тьюпл
 zoo = ('lion', 'elephant', 'monkey', 'skunk', 'horse', 'elephant')
 elephant_to_free(zoo)
 print(zoo)
-
