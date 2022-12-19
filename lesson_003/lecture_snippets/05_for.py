@@ -113,7 +113,7 @@ for a, b in [(1, 2), (3, 4), (5, 6, 7)]:
 #       printf(i, animal);
 # }
 
-for i, animal in enumerate(zoo_pets):
+for i, animal in enumerate(zoo_pets):  # enumerate - пара (индекс, значение)
     print(i, animal)
 
 # генерация целочисленных последовательностей
@@ -145,18 +145,22 @@ zoo_pet_mass = {
     'elephant': 5000,
     'horse': 400,
 }
+
+# здесь проходимся по ключам
 total_mass = 0
 for animal in zoo_pet_mass:
     print(animal, zoo_pet_mass[animal])
     total_mass += zoo_pet_mass[animal]
 print('Общая масса животных', total_mass)
 
+# .items() для того, чтобы пройтись по парам ключ-значение
 total_mass = 0
 for animal, mass in zoo_pet_mass.items():
     print(animal, mass)
     total_mass += mass
 print('Общая масса животных', total_mass)
 
+# .values() для того, чтобы пройтись только по значениям
 total_mass = 0
 for mass in zoo_pet_mass.values():
     print(mass)
