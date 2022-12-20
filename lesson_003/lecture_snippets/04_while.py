@@ -30,14 +30,17 @@ else:
 print('дотвиданя!')
 
 # break
-my_pets = ['cat', 'dog', 'hamster']
+my_pets = ['dog', 'hamster','cat']
 i = 0
 while i < len(my_pets):
     pet = my_pets[i]
     print('Проверяем ', pet)
     if pet == 'cat':
         print('Ура, кот найден!')
+        break
     i += 1
+else:
+    print('Не нашли...')
 print('дотвиданя!')
 
 
