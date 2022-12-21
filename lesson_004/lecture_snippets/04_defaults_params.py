@@ -12,14 +12,13 @@ process(subject='Мама')
 process(subject='Папа', action='сломал')
 process(subject='Кржижановский', action='видел', object='Ленина')  # https://goo.gl/My5Wx7
 
-
 # значения по умолчанию вычисляются в точке определения функции, при компиляции
-# обычная ошибка - изменяемый объект в качестве параметра по умолчанию
+# обычная ошибка -- изменяемый объект в качестве параметра по умолчанию
+
 def add_element_to_list(element, list_to_add=[]):
-    """добавляем элемент к списку"""
+    """Добавляем элемент к списку"""
     list_to_add.append(element)
     return list_to_add
-
 
 my_list = [3, 4, 5]
 add_element_to_list(element=1, list_to_add=my_list)
@@ -37,7 +36,7 @@ print(my_list)
 
 # решение проблемы
 def add_element_to_list(element, list_to_add=None):
-    """добавляем элемент к списку"""
+    """Добавляем элемент к списку"""
     if list_to_add is None:
         list_to_add = []
     list_to_add.append(element)
