@@ -129,7 +129,7 @@ isinstance(profit, list)
 type(profit)
 
 # open() - открыть файл на файловой системе
-ff = open('lesson_004/lecture_snippets/05_builtin.py', 'r')
+ff = open('lesson_004/lecture_snippets/07_builtin.py', 'r')
 for line in ff.readlines():
     print(line, end='')
 ff.close()
