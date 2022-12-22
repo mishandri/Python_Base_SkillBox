@@ -58,9 +58,27 @@ def square(x=0, y=0, angle=0, length=200, width=3):
     v4.draw()
 
 
+def pentagon(x=0, y=0, angle=0, length=200, width=3):
+    """
+    Рисует пятиугольник
+    """
+    start_point = point(x, y)
+    v1 = sd.get_vector(start_point=start_point, angle=angle, length=length, width=width)
+    v2 = sd.get_vector(start_point=v1.end_point, angle=angle + 72, length=length, width=width)
+    v3 = sd.get_vector(start_point=v2.end_point, angle=angle + 144, length=length, width=width)
+    v4 = sd.get_vector(start_point=v3.end_point, angle=angle + 216, length=length, width=width)
+    v5 = sd.get_vector(start_point=v4.end_point, angle=angle + 288, length=length, width=width)
+    v1.draw()
+    v2.draw()
+    v3.draw()
+    v4.draw()
+    v5.draw()
+
+
 # TODO здесь ваш код
 triangle(10, 10, 20, 100, 3)
 square(100, 100, 45, 100, 3)
+pentagon(200, 200, 45, 100, 3)
 
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
