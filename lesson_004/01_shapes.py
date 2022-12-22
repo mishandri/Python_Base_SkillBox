@@ -2,6 +2,7 @@
 
 import simple_draw as sd
 
+
 # Часть 1.
 # Написать функции рисования равносторонних геометрических фигур:
 # - треугольника
@@ -26,9 +27,22 @@ import simple_draw as sd
 # sd.get_vector()
 # sd.line()
 # Результат решения см lesson_004/results/exercise_01_shapes.jpg
+def point(x=0, y=0):
+    return sd.get_point(x, y)
+
+
+def triangle(x=0, y=0, angle=0, length=200, width=3):
+    start_point = point(x, y)
+    v1 = sd.get_vector(start_point=start_point, angle=angle, length=length, width=width)
+    v2 = sd.get_vector(start_point=v1.end_point, angle=angle + 120, length=length, width=width)
+    v3 = sd.get_vector(start_point=v2.end_point, angle=angle + 240, length=length, width=width)
+    v1.draw()
+    v2.draw()
+    v3.draw()
+
 
 # TODO здесь ваш код
-
+triangle(10, 10, 20, 200, 3)
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
 # Скажем, связывать точки не линиями, а дугами. Или двойными линиями. Или рисовать круги в угловых точках. Или...
