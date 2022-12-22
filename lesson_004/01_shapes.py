@@ -2,10 +2,9 @@
 
 import simple_draw as sd
 
-
 # Часть 1.
 # Написать функции рисования равносторонних геометрических фигур:
-# - треугольника
+# - треугольника +
 # - квадрата
 # - пятиугольника
 # - шестиугольника
@@ -32,6 +31,9 @@ def point(x=0, y=0):
 
 
 def triangle(x=0, y=0, angle=0, length=200, width=3):
+    """
+    Рисует равносторонний треугольник
+    """
     start_point = point(x, y)
     v1 = sd.get_vector(start_point=start_point, angle=angle, length=length, width=width)
     v2 = sd.get_vector(start_point=v1.end_point, angle=angle + 120, length=length, width=width)
@@ -41,8 +43,25 @@ def triangle(x=0, y=0, angle=0, length=200, width=3):
     v3.draw()
 
 
+def square(x=0, y=0, angle=0, length=200, width=3):
+    """
+    Рисует квадрат
+    """
+    start_point = point(x, y)
+    v1 = sd.get_vector(start_point=start_point, angle=angle, length=length, width=width)
+    v2 = sd.get_vector(start_point=v1.end_point, angle=angle + 90, length=length, width=width)
+    v3 = sd.get_vector(start_point=v2.end_point, angle=angle + 180, length=length, width=width)
+    v4 = sd.get_vector(start_point=v3.end_point, angle=angle + 270, length=length, width=width)
+    v1.draw()
+    v2.draw()
+    v3.draw()
+    v4.draw()
+
+
 # TODO здесь ваш код
-triangle(10, 10, 20, 200, 3)
+triangle(10, 10, 20, 100, 3)
+square(100, 100, 45, 100, 3)
+
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
 # Скажем, связывать точки не линиями, а дугами. Или двойными линиями. Или рисовать круги в угловых точках. Или...
