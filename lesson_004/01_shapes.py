@@ -103,7 +103,6 @@ def polygon(x=0, y=0, sides=3, angle=0, length=200, width=3):
         angle += (360 + sides-2)/sides
 
 
-# TODO здесь ваш код
 # triangle(10, 10, 20, 100, 3)
 # square(100, 100, 45, 100, 3)
 # pentagon(200, 200, 45, 100, 3)
