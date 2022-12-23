@@ -17,5 +17,3 @@ while a >= b:
     integer += 1
 
 print('Целочисленное деление', a_start, 'на', b_start, 'дает', integer)
-
-# TODO здесь ваш код
