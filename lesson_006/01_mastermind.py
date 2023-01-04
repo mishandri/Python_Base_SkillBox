@@ -54,5 +54,3 @@ while mme.game:
     if mme.game:
         break
 
-
-# TODO здесь ваш код...
