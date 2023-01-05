@@ -1,3 +1,8 @@
+# from random import randint, random, choice
+choice(list)  # выбор одного значения из списка
+randint(a,b)  # произвольное целое число от a до b-1
+random()  # произвольное число от 0 до 1
+
 # Интересные функции python:
 x = 10
 isinstance(x, int)  # проверяет является ли x переменной типа int. True/False
