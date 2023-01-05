@@ -2,11 +2,84 @@
 
 from random import randint
 
+from termcolor import cprint
+
+
 # Доработать практическую часть урока lesson_007/python_snippets/08_practice.py
+# Реализуем модель человека.
+# Человек может есть, работать, играть, ходить в магазин.
+# У человека есть степень сытости, немного еды и денег.
+# Если сытость < 0 единиц, человек умирает.
+# Человеку надо прожить 365 дней.
+class Man:
+
+    def __init__(self, name):
+        self.name = name
+        self.fullness = 10
+        self.food = 20
+        self.money = 50
+
+    def __str__(self):
+        return '{}: сытость {}, еды осталось {}, денег {}'.format(self.name, self.fullness
+                                                                      , self.food, self.money)
+
+    def eat(self):
+        if self.food >= 10:
+            print('{} поел'.format(self.name))
+            self.fullness += 10
+            self.food -= 10
+        else:
+            print('{} нет еды'.format(self.name))
+
+    def work(self):
+        cprint('{} сходил на работу'.format(self.name), 'magenta')
+        self.money += 50
+        self.fullness -= 10
+
+    def play_DOTA(self):
+        cprint('{} играл целый день'.format(self.name), "green", "on_red")
+        self.fullness -= 10
+
+    def act(self):
+        if self.fullness < 0:
+            print('{} умер...'.format(self.name))
+            return
+
+        dice = randint(1, 6)
+        if self.fullness <= 20:
+            self.eat()
+        elif self.food < 10:
+            self.shopping()
+        elif self.money < 50:
+            self.work()
+        elif dice == 1:
+            self.work()
+        elif dice == 2:
+            self.eat()
+        else:
+            self.play_DOTA()
+
+    def shopping(self):
+        if self.money >= 50:
+            print('{} сходил в магазин'.format(self.name))
+            self.money -= 50
+            self.food += 50
+        else:
+            print('{} деньги кончились!'.format(self.name))
+
+beavis = Man(name='Бивис')
+butthead = Man(name='Батхед')
+
+for day in range(1, 366):
+    cprint('\n===================== ДЕНЬ {} ====================='.format(day))
+    beavis.act()
+    butthead.act()
+    print(beavis)
+    print(butthead)
 
 # Необходимо создать класс кота. У кота есть аттрибуты - сытость и дом (в котором он живет).
 # Кот живет с человеком в доме.
-# Для кота дом характеризируется - миской для еды и грязью.
+# Для кота дом характеризуется - миской для еды и грязью.
 # Изначально в доме нет еды для кота и нет грязи.
 
 # Доработать класс человека, добавив методы
