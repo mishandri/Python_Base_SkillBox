@@ -2,6 +2,7 @@
 
 from random import randint
 
+
 # Доработать практическую часть урока lesson_007/python_snippets/08_practice.py
 # Реализуем модель человека.
 # Человек может есть, работать, играть, ходить в магазин.
@@ -39,17 +40,19 @@ class Man:
         self.house = house
         self.fullness -= 10
         print('{} въехал в дом'.format(self.name))
+
     def act(self):
         if self.fullness < 0:
             print('{} умер...'.format(self.name))
             return
 
         dice = randint(1, 6)
+
         if self.fullness <= 20:
             self.eat()
         elif self.house.food < 10:
             self.shopping()
-        elif self.house.money < 50:
+        elif self.house.money <= 50:
             self.work()
         elif dice == 1:
             self.work()
@@ -75,22 +78,27 @@ class House:
     def __str__(self):
         return 'В доме осталось еды {}, денег {}'.format(self.food, self.money)
 
-beavis = Man(name='Бивис')
-butthead = Man(name='Батхед')
+
+citizens = [
+    Man(name='Бивис'),
+    Man(name='Батхед'),
+    Man(name='Кенни')
+]
 
 my_sweet_home = House()
 
-beavis.go_to_the_house(my_sweet_home)
-butthead.go_to_the_house(my_sweet_home)
+for citizen in citizens:
+    citizen.go_to_the_house(my_sweet_home)
 
-for day in range(1, 21):
+for day in range(1, 366):
     print('\n===================== ДЕНЬ {} ====================='.format(day))
-    beavis.act()
-    butthead.act()
+    for citizen in citizens:
+        citizen.act()
+
     print(my_sweet_home)
-    print('----------------------- ЖИТЕЛИ -----------------------')
-    print(beavis)
-    print(butthead)
+    print('---------------------- ЖИТЕЛИ ----------------------')
+    for citizen in citizens:
+        print(citizen)
 
     # Необходимо создать класс кота. У кота есть аттрибуты - сытость и дом (в котором он живет).
     # Кот живет с человеком в доме.
