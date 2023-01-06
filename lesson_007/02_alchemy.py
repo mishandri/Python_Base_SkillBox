@@ -155,7 +155,10 @@ for element in elements:
 # Примеры преобразований:
 #   print(Water(), '+', Air(), '=', Water() + Air())
 #   print(Fire(), '+', Air(), '=', Fire() + Air())
-
+water = Water()
+air = Air()
+print(type(Air() + Water()))
+print(type(air + water))
 # Усложненное задание (делать по желанию)
 # Добавить еще элемент в игру.
 # Придумать что будет при сложении существующих элементов с новым.
