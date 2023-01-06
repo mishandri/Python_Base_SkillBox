@@ -162,8 +162,8 @@ class House:
     def __init__(self):
         self.food = 50
         self.money = 50
-        self.catfood = None
-        self.dirt = None
+        self.catfood = 0
+        self.dirt = 0
         self.cat = None
 
     def __str__(self):
@@ -192,7 +192,6 @@ class House:
 
 # Человеку и коту надо вместе прожить 365 дней.
 
-# Усложненное задание (делать по желанию)
 # Создать несколько (2-3) котов и подселить их в дом к человеку.
 # Им всем вместе так же надо прожить 365 дней.
 
