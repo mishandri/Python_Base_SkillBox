@@ -11,8 +11,6 @@ import simple_draw as sd
 class Snowflake:
     pass
 
-    # TODO здесь ваш код
-
 
 flake = Snowflake()
 
