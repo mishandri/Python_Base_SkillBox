@@ -47,7 +47,7 @@ class Robot:
 class WarRobot(Robot):
 
     def operate(self):
-        print('Робот охраняет военный обьект')
+        print('Робот охраняет военный объект')
 
 
 class VacuumCleaningRobot(Robot):
