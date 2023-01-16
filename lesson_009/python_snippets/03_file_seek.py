@@ -50,7 +50,7 @@ file.close()
 # аналогично для записи
 
 
-# Свойства и функции у обьекта файл
+# Свойства и функции у объекта файл
 pprint(file.name)
 pprint(file.mode)
 pprint(file.encoding)
@@ -61,7 +61,7 @@ pprint(file.writable())  # файл можно писать
 pprint(file.seekable())  # файл поддерживает произвольный доступ
 
 pprint(file.truncate(size=None))
-pprint(file.flush())  # обычно файл буферезирован, флаш записвыает весь буфер на диск
+pprint(file.flush())  # обычно файл буферизирован, флаш записывает весь буфер на диск
 
 # Файлы по сути являются потоками байтов - streams. https://docs.python.org/3/library/io.html
 
