@@ -39,13 +39,29 @@ class log_nok:
                     res[line[:17] + '] '] = n
 
             with open(self.file_res, 'w') as file_res:
+                year = ''
+                month = ''
+                day = ''
+                hour = ''
+                # [2018-05-17 01:57]
                 for i in res:
-                    file_res.write(f'{i} {res[i]}\n')
+                    if year != i[1:5]:
+                        year = i[1:5]
+                        file_res.write(f'{year}\n')
+                    elif month != i[6:8]:
+                        month = i[6:8]
+                        file_res.write(f'\t{month}\n')
+                    elif day != i[9:11]:
+                            day = i[9:11]
+                            file_res.write(f'\t\t{day}\n')
+                    elif hour != i[12:14]:
+                            hour = i[12:14]
+                            file_res.write(f'\t\t\t{hour}\n')
+                    else:
+                        file_res.write(f'\t\t\t\t{i} {res[i]}\n')
 
 logging = log_nok('events.txt', 'res.txt')
 logging.read_log()
-
-# TODO здесь ваш код
 
 # После выполнения первого этапа нужно сделать группировку событий
 #  - по часам
