@@ -9,7 +9,7 @@ import os
 path = 'C:\\Windows\\help'
 
 # Пройтись по всем файлам в директории.
-for dirpath, dirnames, filenames in os.walk(path):
+for dirpath, dirnames, filenames in os.walk(path): # это тьюплы: (dirpath, dirnames[], filenames[])
     print(dirpath, dirnames, filenames)
 
 # В разных ОС путь записывается по разному: привести к нужному в этой ОС виду
