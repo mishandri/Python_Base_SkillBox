@@ -78,16 +78,29 @@ class Stat_Txt_File:
         output += '+---------+----------+\n'
         return output
 
+    #  - по частоте по возрастанию
+    def sort_value(self):
+        '''Sort stat by sequence'''
+        self.totals = dict(sorted(self.totals.items(), key=lambda item: item[1]))
 
-# TODO здесь ваш код
+    #  - по алфавиту по возрастанию
+    def sort_key_up(self):
+        '''Sort stat by aplphabet'''
+        self.totals = dict(sorted(self.totals.items()))
 
-chatterer = Stat_Txt_File(file_name='voyna-i-mir.txt.zip')
-chatterer.collect_stat()
-chatterer.prepare()
-print(chatterer)
+    #  - по алфавиту по убыванию
+    def sort_key_down(self):
+        '''Sort stat by reverse aplphabet'''
+        self.totals = dict(sorted(self.totals.items(), reverse=True))
+
+
+stat = Stat_Txt_File(file_name='voyna-i-mir.txt.zip')
+stat.collect_stat()
+stat.prepare()
+# print(stat)
+stat.sort_value()
+print(stat)
 
 # После выполнения первого этапа нужно сделать упорядочивание статистики
-#  - по частоте по возрастанию
-#  - по алфавиту по возрастанию
-#  - по алфавиту по убыванию
 # Для этого пригодится шаблон проектирование "Шаблонный метод" см https://goo.gl/Vz4828
+# Не использовал шаблонный метод
