@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import zipfile
+from pprint import pprint
 
 
 # Подсчитать статистику по буквам в романе Война и Мир.
@@ -37,7 +38,7 @@ class Stat_Txt_File:
     def collect_stat(self):
         if self.txt_file.endswith('.zip'):
             self.unzip()
-        self.sequence = ' '
+        self.sequence = ''
         with open(self.txt_file, 'r', encoding='cp1251') as file:
             for line in file:
                 self._collect_for_line(line=line[:-1])
@@ -64,12 +65,27 @@ class Stat_Txt_File:
                 self.totals[sequence] += count
                 self.stat_for_generate[sequence].append([count, char])
                 self.stat_for_generate[sequence].sort(reverse=True)
-        return self.totals
+        self.totals.pop('')  # Удалить пустой ключ
+        # return self.totals
+
+    def __str__(self):
+        output = ''
+        output += '+---------+----------+\n'
+        output += '|  буква  | частота  |\n'
+        output += '+---------+----------+\n'
+        for key, value in self.totals.items():
+            output += f'|{key:^9}|{value:^10}|\n'
+        output += '+---------+----------+\n'
+        return output
+
+
 # TODO здесь ваш код
 
 chatterer = Stat_Txt_File(file_name='voyna-i-mir.txt.zip')
 chatterer.collect_stat()
-print(chatterer.prepare())
+chatterer.prepare()
+print(chatterer)
+
 # После выполнения первого этапа нужно сделать упорядочивание статистики
 #  - по частоте по возрастанию
 #  - по алфавиту по возрастанию
