@@ -19,6 +19,32 @@
 # Входные параметры: файл для анализа, файл результата
 # Требования к коду: он должен быть готовым к расширению функциональности. Делать сразу на классах.
 
+class log_nok:
+
+    def __init__(self, file_log, file_res):
+        self.file_log = file_log
+        self.file_res = file_res
+    def read_log(self):
+        res = {}
+        with open(self.file_log, 'r') as file:
+            for line in file:
+                # print(line, end='')
+                if line.endswith('NOK\n'):
+                    # print(line, end='')
+                    if line[:17] +'] ' not in res:
+                        n = 1
+                    else:
+                        n += 1
+
+                    res[line[:17] + '] '] = n
+
+            with open(self.file_res, 'w') as file_res:
+                for i in res:
+                    file_res.write(f'{i} {res[i]}\n')
+
+logging = log_nok('events.txt', 'res.txt')
+logging.read_log()
+
 # TODO здесь ваш код
 
 # После выполнения первого этапа нужно сделать группировку событий
