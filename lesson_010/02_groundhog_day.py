@@ -61,24 +61,27 @@ def one_day():
     else:
         return carma
 
-ENLIGHTENMENT_CARMA_LEVEL = 0
+ENLIGHTENMENT_CARMA_LEVEL = 777
+carma_level = 0
 day = 0
 
 file_log = '02_log.txt'
-
-while ENLIGHTENMENT_CARMA_LEVEL <= 777:
+with open(file_log, 'w', encoding='utf8'):
+    pass
+while carma_level <= ENLIGHTENMENT_CARMA_LEVEL:
     day += 1
     try:
         carma = one_day()
-        ENLIGHTENMENT_CARMA_LEVEL += carma
+        carma_level += carma
         with open(file_log, 'a', encoding='utf8') as file:
-            file.write(f'День {day}. КАРМА = {ENLIGHTENMENT_CARMA_LEVEL}\n')
+            file.write(f'День {day}. КАРМА = {carma_level}\n')
     except Exception as exc:
-        ENLIGHTENMENT_CARMA_LEVEL -= 1
+        carma_level -= 2
         with open(file_log, 'a', encoding='utf8') as file:
-            file.write(f'День {day}. {exc}. КАРМА = {ENLIGHTENMENT_CARMA_LEVEL}\n')
+            file.write(f'День {day}. {exc}. КАРМА = {carma_level}\n')
 else:
-    print('Наконец-то этот день закончился!')
+    with open(file_log, 'a', encoding='utf8') as file:
+        file.write('Наконец-то этот день закончился!')
 
 #
 
