@@ -21,5 +21,39 @@
 # - поле емейл НЕ содержит @ и .(точку): NotEmailError (кастомное исключение)
 # - поле возраст НЕ является числом от 10 до 99: ValueError
 # Вызов метода обернуть в try-except.
+class NotNameError(Exception):
+    pass
 
-# TODO здесь ваш код
+
+class NotEmailError(Exception):
+    pass
+
+
+with open('registrations_good.log', 'w', encoding='utf8'):
+    pass
+
+with open('registrations_bad.log', 'w', encoding='utf8'):
+    pass
+
+with open('registrations.txt', 'r', encoding='utf8') as file:
+    for line in file:
+        try:
+            name, email, age = line.split(' ')
+            if not name.isalpha():
+                raise NotNameError('Поле имени содержит НЕ только буквы.')
+            if '@' not in email or '.' not in email:
+                raise NotEmailError('Поле емейл НЕ содержит @ и .(точку)')
+            if not (10 <= int(age) <= 99):
+                raise ValueError('поле возраст НЕ является числом от 10 до 99')
+        except ValueError as exc:
+            with open('registrations_bad.log', 'a', encoding='utf8') as file:
+                file.write(f'{exc}\n')
+        except NotNameError as exc:
+            with open('registrations_bad.log', 'a', encoding='utf8') as file:
+                file.write(f'{exc}\n')
+        except NotEmailError as exc:
+            with open('registrations_bad.log', 'a', encoding='utf8') as file:
+                file.write(f'{exc}\n')
+        else:
+            with open('registrations_good.log', 'a', encoding='utf8') as file:
+                file.write(f'{name} {email} {age}')
