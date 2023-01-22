@@ -83,8 +83,5 @@ else:
     with open(file_log, 'a', encoding='utf8') as file:
         file.write('Наконец-то этот день закончился!')
 
-#
-
-# TODO здесь ваш код
 
 # https://goo.gl/JnsDqu

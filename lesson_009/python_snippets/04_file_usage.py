@@ -44,7 +44,6 @@ class InOutBlock:
 
     def __enter__(self):
         print('Входим в блок кода')
-        # TODO обратите внимание что тут надо вернуть обьект - в видео это пропущено
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):

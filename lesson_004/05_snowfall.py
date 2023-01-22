@@ -17,7 +17,7 @@ N = 20
 # sd.random_number()
 # sd.user_want_exit()
 
-# TODO здесь ваш код
+
 while True:
     sd.clear_screen()
     pass
