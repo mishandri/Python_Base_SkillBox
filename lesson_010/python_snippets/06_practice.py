@@ -5,7 +5,7 @@
 # 100 + 34
 # 23 / 4
 #
-# то есть ОПЕРАНД_1 ОПЕРАЦИЯ ОПЕРАНД_2, разделенные пробелами.
+# То есть ОПЕРАНД_1 ОПЕРАЦИЯ ОПЕРАНД_2, разделенные пробелами.
 # Операндны - целые числа. Операции - арифметические, целочисленное деление и остаток от деления.
 #
 # Нужно вычислить все операции и найти сумму их результата.
@@ -29,7 +29,7 @@ def calc(line):
     elif operation == '%':
         value = operand_1 % operand_2
     else:
-        raise ValueError('Unknown operation {operation}')
+        raise ValueError(f'Unknown operation {operation}')
     return value
 
 
