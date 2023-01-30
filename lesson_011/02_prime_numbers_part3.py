@@ -6,6 +6,7 @@
 #           727 -> 7(2)7 -> 7 == 7 -> True
 #           92083 -> 92(0)83 -> 9+2 == 8+3 -> True
 numbers = [727, 92083, 55556, 897456, 5467897]
+
 def happy_number(n):
     n = str(n)
     left = 0
@@ -16,10 +17,20 @@ def happy_number(n):
         right += int(i)
     return True if left == right else False
 
+
 filter_numbers = filter(happy_number, numbers)
 print(list(filter_numbers))
 
 # 2) "палиндромное" - одинаково читающееся в обоих направлениях. Например 723327 и 101
+palindroms = ['арозаупаланалапуазора', 'лазерборехеробрезал', 'обычноепредложение']
+
+def palindrom(line):
+    return True if line == line[::-1] else False
+
+filter_palindromes = filter(palindrom, palindroms)
+print(list(filter_palindromes))
+
+
 # 3) придумать свою (https://clck.ru/GB5Fc в помощь)
 #
 # Подумать, как можно применить функции-фильтры к полученной последовательности простых чисел
