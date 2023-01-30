@@ -17,12 +17,15 @@ class Calculating(Thread):
 
 calc1 = Calculating(N=1)
 calc2 = Calculating(N=2)
+calc3 = Calculating(N=3)
 
 calc1.start()
 calc2.start()
+calc3.start()
 
 calc1.join()
 calc2.join()
+calc3.join()
 
 print('Готово')
 
