@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-def is_not_prime(n) -> bool:
-    prime_numbers = []
-    for number in range(2, n + 1):
-        for prime in prime_numbers:
-            if number % prime == 0:
-                break
-        else:
-            prime_numbers.append(number)
-    return False if n in prime_numbers else True
-
 # Часть 3
 # Написать несколько функций-фильтров, которые выдает True, если число:
 # 1) "счастливое" в обыденном пониманиии - сумма первых цифр равна сумме последних

@@ -22,8 +22,8 @@ def prime_numbers_generator(n):
                 break
         else:
             prime_numbers.append(this_number)
-    yield prime_numbers[-1]
-#
-#
-for number in prime_numbers_generator(n=100000):
+    yield prime_numbers
+
+
+for number in prime_numbers_generator(n=100):
     print(number)
