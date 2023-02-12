@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b513878a-1522-4ba5-a426-fc27fb89a97c" name="Changes" comment="Урок 12. Попробовал своё распараллеливание" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="30b8d154-982a-43b5-8143-3c707f885227" />
+        <option name="url" value="https://github.com/mishandri/Python_Base_SkillBox.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/notes_for_me.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2J5gnJqmpSbOIxxgDO8fnWFcdRx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/misha/PycharmProjects/Python_Base_SkillBox/lesson_012/python_snippets&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Python_Base_SkillBox" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Python_Base_SkillBox" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_012\python_snippets" />
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox" />
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_009" />
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_004\lecture_snippets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_010" />
+      <recent name="C:\Users\misha\PycharmProjects\Python_Base_SkillBox" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.aaa">
+    <configuration name="02_my_parallel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Base_SkillBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_012/python_snippets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_012/python_snippets/02_my_parallel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_my_parallel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Base_SkillBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_012/python_snippets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\misha\PycharmProjects\Python_Base_SkillBox\lesson_012\python_snippets\02_my_parallel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03_my_parallel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Base_SkillBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_012/python_snippets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_012/python_snippets/03_my_parallel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04_error_log_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Base_SkillBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_011" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_011/04_error_log_decorator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="aaa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Base_SkillBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aaa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.aaa" />
+      <item itemvalue="Python.02_my_parallel" />
+      <item itemvalue="Python.02_my_parallel (1)" />
+      <item itemvalue="Python.03_my_parallel" />
+      <item itemvalue="Python.04_error_log_decorator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.aaa" />
+        <item itemvalue="Python.03_my_parallel" />
+        <item itemvalue="Python.02_my_parallel (1)" />
+        <item itemvalue="Python.02_my_parallel" />
+        <item itemvalue="Python.04_error_log_decorator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b513878a-1522-4ba5-a426-fc27fb89a97c" name="Changes" comment="Добавлены файлы Lesson 3" />
+      <created>1671373524964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671373524964</updated>
+      <workItem from="1671473563756" duration="5351000" />
+      <workItem from="1671551742899" duration="574000" />
+    </task>
+    <task id="LOCAL-00016" summary="Изменён файл лекции 1 в соответствии с видеоуроком">
+      <created>1671979588523</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671979588523</updated>
+    </task>
+    <task id="LOCAL-00017" summary="beta версия бык-корова">
+      <created>1671992741369</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671992741369</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Дополнен файл в соответствии с видеоуроком">
+      <created>1672841019377</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672841019377</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Закрыты TODOшки">
+      <created>1672841214832</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672841214832</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Дополнены 1 и 2 файлы урока 7. 3 файл без изменений.&#10;Дополнен мой notes_for_me.py по методам для аттрибутов">
+      <created>1672844255802</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1672844255802</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Дополнен 4 файл урока 7.">
+      <created>1672848409408</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672848409408</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Дополнен мой notes_for_me.py по специальным методам классов">
+      <created>1672848413485</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672848413485</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Дополнен мой notes_for_me.py по перегрузке стандартных операторов">
+      <created>1672851309105</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672851309105</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Дополнен мой notes_for_me.py">
+      <created>1672912166118</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672912166118</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Начало решения Задания 3 Урока 7">
+      <created>1672915748453</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672915748454</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Задание 3 Урок 7. Бивис и Батхед живут в одном доме">
+      <created>1672916884198</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672916884198</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Задание 3 Урок 7. Любое количество живут в одном доме">
+      <created>1672917549514</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1672917549514</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Задание 3 Урок 7. Любое количество живут в одном доме">
+      <created>1672918864385</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672918864385</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Задание 2 Урок 7. Выполнена основная часть задания">
+      <created>1672920681133</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672920681133</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Задание 2 Урок 7. Доделано">
+      <created>1672929045074</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672929045074</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Задание 2 Урок 7. Убрана TODOшка">
+      <created>1672990178246</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672990178246</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Задание 1 Урок 7. Убрана TODOшка. Не хочу делать эти графические задания">
+      <created>1672990202038</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1672990202038</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Задание 3 Урок 7. Выполнено. Но надо исправить 131 и 136 строки">
+      <created>1673012496100</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1673012496100</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Задание 3 Урок 7. Выполнено. Но надо исправить 131 и 136 строки">
+      <created>1673013046348</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673013046349</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Добавлены файлы для Урока 8">
+      <created>1673091660615</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673091660615</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Исправлены ошибки в файле 01_inheritance.py">
+      <created>1673101479278</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673101479278</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Исправлены недочеты в 03_redefinition.py и в 04_super.py.&#10;Добавлен 05_multiply_romb.py">
+      <created>1673175150006</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673175150006</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Исправлены недочеты в 06_theory.py">
+      <created>1673175930893</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1673175930893</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Добавлены файлы для Урока 9">
+      <created>1673682858173</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1673682858173</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Дополнены файлы для Урока 9">
+      <created>1673899588699</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673899588699</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Дополнены файлы для Урока 9. Начато выполнение задания 1: Собрана статистика по буквам">
+      <created>1674299372848</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1674299372848</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Задание 1: написана __str__">
+      <created>1674300720238</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674300720238</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Задание 1: Полностью выполнено">
+      <created>1674321009529</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1674321009529</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Задание 2: Выполнена первая часть задания: лог читается, результат пишется">
+      <created>1674323717961</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1674323717961</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Задание 2: Доделано">
+      <created>1674324900962</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1674324900962</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Задание 3: Подготовка к выполнению">
+      <created>1674371924686</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1674371924686</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Задание 3: Выполнено">
+      <created>1674374938645</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1674374938645</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Добавлены файлы к Уроку 10">
+      <created>1674375073220</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1674375073220</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Дополнены файлы к Уроку 10">
+      <created>1674388394971</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1674388394971</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Дополнены файлы домашек к Уроку 10">
+      <created>1674392099436</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674392099436</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Выполнено Задание 1 Урока 10">
+      <created>1674392412376</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1674392412376</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Выполнено Задание 2 Урока 10">
+      <created>1674394327800</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1674394327800</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Недочёт в файле 03_raise.py">
+      <created>1674394354717</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1674394354717</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Дополнено Задание 2 Урока 10">
+      <created>1674394863384</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1674394863384</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Почищены забытые TODOшки">
+      <created>1674395089215</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1674395089215</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Выполнено Задание 3 Урока 10">
+      <created>1674397165658</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1674397165659</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Добавлены файлы для Урока 11">
+      <created>1674397230847</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1674397230847</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Дополнены файлы для Урока 11">
+      <created>1674923609898</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1674923609899</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Дополнены файлы для Урока 11">
+      <created>1675009653173</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1675009653173</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Добавлены файлы для Урока 12">
+      <created>1675009711862</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1675009711862</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Дополнены файлы для Урока 12">
+      <created>1675092264855</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1675092264856</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Урок 11, задание 3. Выполнена часть 3">
+      <created>1675092610597</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1675092610597</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Урок 12. Попробовал своё распараллеливание">
+      <created>1675100999454</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1675100999454</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Урок 12. Попробовал своё распараллеливание">
+      <created>1675101081276</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1675101081276</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправлены недочеты в 06_theory.py" />
+    <MESSAGE value="Добавлены файлы для Урока 9" />
+    <MESSAGE value="Дополнены файлы для Урока 9" />
+    <MESSAGE value="Дополнены файлы для Урока 9. Начато выполнение задания 1: Собрана статистика по буквам" />
+    <MESSAGE value="Задание 1: написана __str__" />
+    <MESSAGE value="Задание 1: Полностью выполнено" />
+    <MESSAGE value="Задание 2: Выполнена первая часть задания: лог читается, результат пишется" />
+    <MESSAGE value="Задание 2: Доделано" />
+    <MESSAGE value="Задание 3: Подготовка к выполнению" />
+    <MESSAGE value="Задание 3: Выполнено" />
+    <MESSAGE value="Добавлены файлы к Уроку 10" />
+    <MESSAGE value="Дополнены файлы к Уроку 10" />
+    <MESSAGE value="Дополнены файлы домашек к Уроку 10" />
+    <MESSAGE value="Выполнено Задание 1 Урока 10" />
+    <MESSAGE value="Выполнено Задание 2 Урока 10" />
+    <MESSAGE value="Недочёт в файле 03_raise.py" />
+    <MESSAGE value="Дополнено Задание 2 Урока 10" />
+    <MESSAGE value="Почищены забытые TODOшки" />
+    <MESSAGE value="Выполнено Задание 3 Урока 10" />
+    <MESSAGE value="Добавлены файлы для Урока 11" />
+    <MESSAGE value="Дополнены файлы для Урока 11" />
+    <MESSAGE value="Добавлены файлы для Урока 12" />
+    <MESSAGE value="Дополнены файлы для Урока 12" />
+    <MESSAGE value="Урок 11, задание 3. Выполнена часть 3" />
+    <MESSAGE value="Урок 12. Попробовал своё распараллеливание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 12. Попробовал своё распараллеливание" />
+  </component>
+</project>
