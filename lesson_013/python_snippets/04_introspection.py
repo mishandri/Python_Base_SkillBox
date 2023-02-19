@@ -6,12 +6,15 @@
 # Хорошо, если есть документация. А если нет? Нам помогут инструменты интроспекции!
 
 
-### Как мы помним - есть встроенная помощь
+# Как мы помним - есть встроенная помощь
+import sys
+import inspect
+from pprint import pprint
 import requests
 help(requests)
 help(requests.get)
 
-### Интроспекция объектов
+# Интроспекция объектов
 
 # Если у вас произвольный объект, возможно, тот, который был передан в качестве аргумента в функцию,
 # вы, наверное, захотите что-нибудь узнать об этом объекте.
@@ -43,7 +46,7 @@ class SomeClass:
 
 some_object = SomeClass()
 
-### Какое у тебя имя?
+# Какое у тебя имя?
 # Не все объекты имеют имя, но у тех, у которых оно есть, имя хранится в их атрибуте __name__.
 # Имя выводится из объекта, а не из переменной, которая указывает на этот объект.
 
@@ -59,7 +62,7 @@ print(rq.__name__)
 # имя текущего модуля
 print(__name__)
 
-### Какого ты типа?
+# Какого ты типа?
 print(type(some_number))
 
 print(type(some_number) is int)
@@ -79,10 +82,9 @@ check_param(value=some_list)
 print(type(requests))
 
 
-### Что ты знаешь/можешь?
+# Что ты знаешь/можешь?
 # Функция dir() возвращает отсортированный список имен атрибутов для переданного в нее объекта
 
-from pprint import pprint
 
 pprint(dir(some_number))
 pprint(dir(some_list))
@@ -120,7 +122,7 @@ print(callable(some_object.some_class_method))
 
 print(callable(http_get))
 
-###  Что ты за объект?
+# Что ты за объект?
 # с помощью функции isinstance() мы можем выяснить, является ли объект экземпляром определенного типа
 # или определенного пользователем класса
 
@@ -135,7 +137,7 @@ print(isinstance(response, requests.Response))
 print(isinstance(response, requests.NullHandler))
 
 
-### Кто твои предки?
+# Кто твои предки?
 # Функция issubclass() позволяет установить, наследуется ли один класс от другого
 
 class DerivedClass(SomeClass):
@@ -152,9 +154,8 @@ print(isinstance(some_object_2, DerivedClass))
 print(issubclass(requests.ConnectTimeout, requests.HTTPError))
 print(issubclass(requests.ConnectTimeout, requests.RequestException))
 
-### Модуль inspect - https://docs.python.org/3/library/inspect.html
+# Модуль inspect - https://docs.python.org/3/library/inspect.html
 # собирает удобные методы и классы для отображения интроспективной информации
-import inspect
 
 # самые употребимые
 print(inspect.ismodule(requests))
@@ -178,9 +179,8 @@ for param_name, param in get_signature.parameters.items():
     print(param_name, param.name, param.default)
 
 
-### Полезный системный пакет - sys
+# Полезный системный пакет - sys
 
-import sys
 pprint(dir(sys))
 
 # путь к интерпретатору Python
@@ -206,4 +206,3 @@ print(sys.modules)
 # (константы, исклчения, функции)
 print(__builtins__)
 pprint(dir(__builtins__))
-
