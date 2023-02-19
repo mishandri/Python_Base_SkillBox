@@ -7,14 +7,15 @@
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 
+path = os.path.join('lesson_013','python_snippets')
 
 class PostCardMaker:
 
     def __init__(self, name, template=None, font_path=None):
         self.name = name
-        self.template = "post_card.jpg" if template is None else template
+        self.template = os.path.join(path,"post_card.jpg") if template is None else template
         if font_path is None:
-            self.font_path = os.path.join("fonts", "ofont_ru_DS Eraser2.ttf")
+            self.font_path = os.path.join(path, "fonts", "ofont_ru_DS Eraser2.ttf")
         else:
             self.font_path = font_path
 
@@ -36,10 +37,11 @@ class PostCardMaker:
 
         # im.show()
         out_path = out_path if out_path else 'probe.jpg'
-        im.save(out_path)
+        im.save(os.path.join(path, out_path))
         print(f'Post card saved az {out_path}')
 
 
 if __name__ == '__main__':
     maker = PostCardMaker(name='Оля')
     maker.make(resize=True)
+

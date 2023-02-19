@@ -19,5 +19,5 @@ y = resized_im.size[1]//2 + 50
 
 draw.text((x, y), 'Привет!', font=font, fill="#ff0000")
 
-resized_im.show()
-# resized_im.save(os.path.join(path,'probe.jpg'))
+# resized_im.show()
+resized_im.save(os.path.join(path,'probe.jpg'))
